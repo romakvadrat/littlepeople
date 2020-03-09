@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Yanone+Kaffeesatz&display=swap');
+
+:root {
+  --main-color: black;
+  --secondary-color: #9E8656;
+  background-color: #A1DAD3;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  max-width: 980px;
+  margin: auto;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 5px;
+}
+
+@media (max-width: 550px) {
+  header nav {
+    display: block;
+  }
+}
+
+header nav .logo {
+  font-family: 'Oswald', sans-serif;
+  font-size: 150%;
+  vertical-align: middle;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: inherit;
+}
+
+header nav .top-menu {
+  color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline;
+  padding: 0;
+  margin: auto;
+  list-style-type: none;
+}
+
+header nav .top-menu a {
+  text-decoration: none;
+  border: 1px solid transparent;
+  padding: 2px;
+}
+
+header nav .top-menu a:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+header div {
+  background-image: url(../image/main-logo.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 550px;
+  width: 100%;
+}
+
+header .banner {
+    padding: 30px 0;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+header .banner .title {
+  font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 0em;
+  margin-block-end: 3em; 
+  text-align: center;
+}
+
+header .banner .bottom-title {
+  font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 10em;
+  margin-block-end: 3em; 
+  text-align: center;
+  justify-content: center;
+  
+}
+
+main .about {
+    margin: auto;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+@media (min-width: 550px) {
+  main .about {
+      display: grid;
+      grid-template-columns: 1fr 3fr 3fr;
+      column-gap: 20px;
+    row-gap: 2em;
+  }
+}
+
+@media (min-width: 660px) {
+  main .about {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr); 
+      column-gap: 20px;
+    row-gap: 2em;
+  }
+  
+}
+
+@media (min-width: 550px) and (max-width: 768px) {
+        main .about .box1 {
+            writing-mode: vertical-lr;
+            text-orientation: upright;
+        }
+
+}
+
+main .about .box1 {
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 0 0;
+    margin-block-start: 3em;
+    margin-block-end: 3em; 
+    text-align: center;
+    justify-content: center;
+}
+main .about .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+main .about .box3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+}
+
+.galery-title {
+    display: flex;
+    font-size: 130%;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding: 3em 0;
+  margin-block-start: 0em;
+  margin-block-end: 3em; 
+  text-align: center;
+  justify-content: center;
+}
+
+main .galery-list .galery-card img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 580px) {
+    main .galery-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+}
+
+@media (min-width: 660px) {
+    main .galery-list {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+
+@media (min-width: 980px) {
+    main .galery-list {
+        grid-template-columns: repeat(3, 1fr);  
+    }
+}
+
+main #buy h2 {
+    display: flex;
+    font-size: 130%;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    padding: 3em 0;
+    margin-block-start: 0em;
+    margin-block-end: 3em; 
+    text-align: center;
+    justify-content: center;
+}
+
+main .buy-list .buy-card img {
+    display: block;
+    width: 100%;
+}
+
+main .buy-list .buy-card .button-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (min-width: 580px) {
+    main .buy-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+}
+
+@media (min-width: 660px) {
+    main .buy-list {
+        grid-template-columns: 1fr 1fr 1fr;  
+    }
+}
+
+@media (min-width: 980px) {
+    main .buy-list {
+        grid-template-columns: repeat(4, 1fr);  
+    }
+}
+
+.button {
+    display: inline-block;
+    padding: 0.50em 1.2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+    transition: all 0.3s;
+    background-color: transparent;
+}
+
+.button:hover {
+    color: #000000;
+    background-color: #FFFFFF;
+    cursor: pointer;
+}
+
+.card-button {
+    border-color: black;
+    color: black;
+}
+
+.card-button:hover {
+    background-color: beige;
+    color: chocolate;
+}
+
+}
+
+
