@@ -101,7 +101,17 @@
         <div id="contact">
             <h3>Зв'язок зі мною</h3>
             <p>Хочете дізнатися більше - пишіть!</p>
-            <form action="https://formspree.io/mwkbqdkr" method="POST">
+        <form id="my-form" action="https://formspree.io/mwkbqdkr" method="POST">
+            <label>Ім’я:</label>
+            <input type="text" name="client-name" required/>
+            <label>Email:</label>
+            <input type="email" name="email" required/>
+            <label>Введіть Ваше повідомлення:</label>
+            <input type="text" name="message" />
+            <button id="my-form-button">Submit</button>
+            <p id="my-form-status"></p>
+        </form>
+            <!-- <form action="https://formspree.io/mwkbqdkr" method="POST">
                 <div class="form-group">
                     <textarea class="form-control" name="message" rows="7" data-rule="required"></textarea>
                     <label>Введіть ваше повідомлення....</label>
@@ -130,15 +140,9 @@
                 </div>
                 <div class="button-container">
                     <button class="button card-button">Написати</button>
+                </div> -->
                 </div>
-        </div>
-        </form>
-        </div>
     </main>
+<script src="js/script.js"></script>
 </body>
-
-<<<<<<< HEAD
 </html>
-=======
-</html>
->>>>>>> 76b53bca751f9bbd3ea75b09bc6ee746d89d193f
