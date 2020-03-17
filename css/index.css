@@ -195,7 +195,12 @@ main .galery-list .galery-card img {
 @media (min-width: 980px) {
     main .galery-list {
         grid-template-columns: repeat(3, 1fr);
+<<<<<<< HEAD
     }  
+=======
+    }
+    
+>>>>>>> 76b53bca751f9bbd3ea75b09bc6ee746d89d193f
 }
     main #buy h2 {
         display: flex;
@@ -282,4 +287,8 @@ main .galery-list .galery-card img {
         margin-block-end: 3em;
         text-align: center;
         justify-content: center;
+<<<<<<< HEAD
     }
+=======
+    }
+>>>>>>> 76b53bca751f9bbd3ea75b09bc6ee746d89d193f
