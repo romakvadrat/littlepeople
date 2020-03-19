@@ -61,6 +61,23 @@ a {
     color: inherit;
 }
 
+.semi-transparent-button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 8px;
+  width: 80%;
+  max-width: 200px;
+  background: #fff; /* запасной цвет для старых браузеров */
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 8px;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 1px;
+  transition: all 0.3s ease-out;
+} 
 
 /* Header */
 
@@ -80,6 +97,8 @@ header nav {
 header .container .logo a {
     font-family: 'Oswald', sans-serif;
     font-size: 2rem;
+    display: flex;
+    justify-content: space-around;
     vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
@@ -92,11 +111,10 @@ header nav .top-menu {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    padding: 0;
+    padding: 1em;
     margin: auto;
     list-style-type: none;
     text-decoration: none;
-    color: inherit;
 }
 
 header nav .top-menu a {
@@ -104,6 +122,7 @@ header nav .top-menu a {
     color: inherit;
     border: 1px solid transparent;
     padding: 2px;
+    font-size: 25px;
 }
 
 header nav .top-menu a:hover {
@@ -119,21 +138,21 @@ main section#banner {
 }
 
 main section#banner .title {
-    font-size: 130%;
+    font-size: 50px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    padding: 3em 0;
+    padding: 1em 0;
     margin-block-start: 0em;
-    margin-block-end: 3em;
+    margin-block-end: 1em;
     text-align: center;
 }
 
 main section#banner .bottom-title {
-    font-size: 130%;
+    font-size: 40px;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    padding: 3em 0;
-    margin-block-start: 10em;
+    padding: 0;
+    
     margin-block-end: 3em;
     text-align: center;
     justify-content: center;
@@ -141,6 +160,10 @@ main section#banner .bottom-title {
 
 
 /* About Section*/
+main section#about {
+   background: rgb(162,235,206);
+background: linear-gradient(13deg, rgba(162,235,206,1) 0%, rgba(99,155,146,1) 100%);
+}
 
 main section#about .container {
     margin: auto;
@@ -190,10 +213,9 @@ main section#about .container .box1 {
 
 main section#about .container .box2 {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
+    justify-content: space-evenly;
     flex-direction: column;
+    font-size: 15px;
 }
 
 main section#about .container .box3 {
@@ -204,8 +226,11 @@ main section#about .container .box3 {
     flex-direction: column;
 }
 
-
 /* Galery Section */
+main section#galery {
+    background: rgb(155,224,177);
+/* background: linear-gradient(180deg, rgba(155,224,177,1) 0%, rgba(99,155,146,1) 100%); */
+}
 
 main section#galery .container h2.galery-title {
     display: flex;
@@ -219,10 +244,11 @@ main section#galery .container h2.galery-title {
     justify-content: center;
 }
 
-.carousel-item active {
-    max-width: 980px;
-}
-
+.containergalery {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 30px 0;
+    }
 
 /* main section#galery .galery-card-wrapper .galery-card img {
     display: block;
@@ -252,6 +278,10 @@ main section#galery .container h2.galery-title {
 
 /* Buy Section */
 
+main section#buy {
+    background: rgb(162,223,235);
+/* background: linear-gradient(0deg, rgba(162,223,235,1) 0%, rgba(99,155,146,1) 100%); */
+}
 main section#buy h2 {
     display: flex;
     font-size: 130%;
@@ -307,7 +337,9 @@ main section#buy .buy-card-wrapper .buy-card .button-container {
 
 
 /* Buy Section */
-
+main #delivery {
+    background: #9BC3E0;
+}
 main #delivery h2 {
     display: flex;
     font-size: 130%;
@@ -333,6 +365,9 @@ main #delivery p {
 
 /* Contact Section */
 
+main #contact {
+    background: #9BC3E0;
+}
 main #contact h3 {
     display: flex;
     font-size: 130%;
