@@ -393,4 +393,14 @@ main #contact p {
 
 main section#contact .contact-info-wrapper {
     display: flex;
+    justify-content: space-around;
+       
 }
+
+main section#contact .contact-info-wrapper #my-form {
+    display: grid;
+     text-align:center;
+                font-size: 1.2em;
+                padding: 1.5em;
+                color: white;
+} 

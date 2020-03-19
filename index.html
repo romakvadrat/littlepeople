@@ -164,14 +164,16 @@
                 <h3>Зв'язок зі мною</h3>
                 <div class="contact-info-wrapper">
                     <p>Запитайте у мене</p>
-
                     <form id="my-form" action="https://formspree.io/mwkbqdkr" method="POST">
-                        <label>Ім’я:</label>
-                        <input type="text" name="client-name" required />
-                        <label>Email:</label>
-                        <input type="email" name="email" required />
-                        <label>Введіть Ваше повідомлення:</label>
-                        <input type="text" name="message" />
+                        <label>
+                        <input type="text" name="client-name" placeholder="Ім’я" required /> 
+                        </label>
+                        <label>
+                        <input type="email" name="email" placeholder="Електронна пошта" required />
+                        </label>
+                        <label>
+                        <input type="text" name="message" placeholder="Введіть Ваше повідомлення:"/>
+                        </label>
                         <button id="my-form-button">Надіслати</button>
                         <p id="my-form-status"></p>
                     </form>
