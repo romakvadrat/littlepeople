@@ -20,7 +20,7 @@ body {
     padding: 30px 0;
 }
 
-.button {
+/* .button {
     display: inline-block;
     padding: 0.3em 1.2em;
     border: 0.1em solid black;
@@ -49,7 +49,7 @@ body {
 .card-button:hover {
     background-color: beige;
     color: chocolate;
-}
+} */
 
 h1 {
     margin: 0;
@@ -68,10 +68,10 @@ a {
   padding: 8px;
   width: 80%;
   max-width: 200px;
-  background: #fff; /* запасной цвет для старых браузеров */
+  background: #fff;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 8px;
-  color: #fff;
+  color: black;
   text-align: center;
   text-decoration: none;
   font-size: 20px;
@@ -88,7 +88,7 @@ header nav {
     padding: 10px 5px;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 660px) {
     header nav {
         display: block;
     }
@@ -175,7 +175,7 @@ main section#about .container {
     flex-direction: column;
 }
 
-@media (min-width: 550px) {
+@media (min-width: 660px) {
     main section#about .container {
         display: grid;
         grid-template-columns: 1fr 3fr 3fr;
@@ -193,7 +193,7 @@ main section#about .container {
     }
 }
 
-@media (min-width: 550px) and (max-width: 768px) {
+@media (min-width: 660px) and (max-width: 768px) {
     main section#about .container .box1 {
         writing-mode: vertical-lr;
         text-orientation: upright;
@@ -201,7 +201,7 @@ main section#about .container {
 }
 
 main section#about .container .box1 {
-    font-size: 130%;
+    font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 0 0;
@@ -232,14 +232,14 @@ main section#galery {
 /* background: linear-gradient(180deg, rgba(155,224,177,1) 0%, rgba(99,155,146,1) 100%); */
 }
 
-main section#galery .container h2.galery-title {
+h2.galery-title {
     display: flex;
-    font-size: 130%;
+    font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
-    margin-block-end: 3em;
+    margin-block-end: 40px;
     text-align: center;
     justify-content: center;
 }
@@ -250,41 +250,15 @@ main section#galery .container h2.galery-title {
     padding: 30px 0;
     }
 
-/* main section#galery .galery-card-wrapper .galery-card img {
-    display: block;
-    width: 100%;
-}
-
-@media (min-width: 580px) {
-    main section#galery .galery-card-wrapper {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 5px;
-    }
-}
-
-@media (min-width: 660px) {
-    main section#galery .galery-card-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
-@media (min-width: 980px) {
-    main section#galery .galery-card-wrapper {
-        grid-template-columns: repeat(3, 1fr);
-    }
-} */
-
-
 /* Buy Section */
 
 main section#buy {
     background: rgb(162,223,235);
-/* background: linear-gradient(0deg, rgba(162,223,235,1) 0%, rgba(99,155,146,1) 100%); */
+    /* background: linear-gradient(0deg, rgba(162,223,235,1) 0%, rgba(99,155,146,1) 100%); */
 }
 main section#buy h2 {
     display: flex;
-    font-size: 130%;
+    font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
@@ -323,12 +297,6 @@ main section#buy .buy-card-wrapper .buy-card .button-container {
     }
 }
 
-@media (min-width: 660px) {
-    main .buy-card-wrapper {
-        grid-template-columns: 1fr 1fr 1fr;
-    }
-}
-
 @media (min-width: 980px) {
     main .buy-card-wrapper {
         grid-template-columns: repeat(4, 1fr);
@@ -336,24 +304,24 @@ main section#buy .buy-card-wrapper .buy-card .button-container {
 }
 
 
-/* Buy Section */
+/* delivery Section */
 main #delivery {
     background: #9BC3E0;
 }
 main #delivery h2 {
     display: flex;
-    font-size: 130%;
+    font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
-    margin-block-end: 3em;
+    margin-block-end: 2em;
     text-align: center;
     justify-content: center;
 }
 
 main #delivery p {
-    font-size: 100%;
+    font-size: 1rem;
     font-family: 'Oswald', sans-serif;
     padding: 0 0;
     margin-block-start: 3em;
@@ -366,16 +334,16 @@ main #delivery p {
 /* Contact Section */
 
 main #contact {
-    background: #9BC3E0;
+    background: rgb(113, 178, 224);
 }
 main #contact h3 {
     display: flex;
-    font-size: 130%;
+    font-size: 2rem;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 3em 0;
     margin-block-start: 0em;
-    margin-block-end: 3em;
+    /* margin-block-end: 3em; */
     text-align: center;
     justify-content: center;
 }
@@ -385,18 +353,9 @@ main #contact p {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     padding: 10px;
-    
-    margin-block-end: 3em;
+    /* margin-block-end: 3em; */
     text-align: center;
     justify-content: center;
-}
-
-@media (min-width: 660px) {
-    main section#contact .container {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-          
-}
 }
 
 @media (min-width: 660px)  {
@@ -438,4 +397,10 @@ button#my-form-button {
     color: black;
     transition: all 0.3s;
     background-color: transparent;
+}
+
+/* footer container */
+
+footer {
+    background: rgb(4, 147, 248);
 }
