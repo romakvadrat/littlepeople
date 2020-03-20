@@ -384,23 +384,58 @@ main #contact p {
     font-size: 100%;
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    padding: 0 0;
-    margin-block-start: 3em;
+    padding: 10px;
+    
     margin-block-end: 3em;
     text-align: center;
     justify-content: center;
 }
 
-main section#contact .contact-info-wrapper {
-    display: flex;
-    justify-content: space-around;
-       
+@media (min-width: 660px) {
+    main section#contact .container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+          
+}
+}
+
+@media (min-width: 660px)  {
+    main section#contact .container .contact-info-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 }
 
 main section#contact .contact-info-wrapper #my-form {
     display: grid;
-     text-align:center;
-                font-size: 1.2em;
-                padding: 1.5em;
-                color: white;
+    text-align:center;
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
 } 
+
+main section#contact .contact-info-wrapper #my-form input {
+   width: 90%;
+}
+
+main section#contact .contact-info-wrapper #my-form input.tarea {
+   width: 90%;
+   height: 150px;
+}
+
+button#my-form-button {
+   position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 30px;
+    border: 0.1em solid black;
+    margin: 0 0.3em 0.3em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: black;
+    transition: all 0.3s;
+    background-color: transparent;
+}
